@@ -11,4 +11,6 @@ A front-end project developed to provide a user-friendly experience when searchi
 ## Built With
 HTML, CSS, JavaScript, Bootstrap
 
-![](media/coffee-giphy.gif)
+<p align="center">
+    <img src="media/coffee-giphy.gif" alt="Coffee Gif">
+</p>
