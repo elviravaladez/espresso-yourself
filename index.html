@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Espresso Yourself</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+<!--Coffee Header JumboTron-->
+<div class="jumbotron jumbotron-fluid">
+    <div class="container justify-content-center">
+        <h1 class="display-4 text-center">Espresso Yourself</h1>
+        <p class="lead text-center">Come one! Come all! Enjoy a delicious coffee from our wide variety of choices! You won't regret it!</p>
+    </div>
+</div>
+
+<hr>
+
+<!--Coffee Table AND Coffee Selection Container -->
+<div class="container">
+    <!--Coffee Table-->
+    <div class="row">
+        <div class="col d-flex flex-wrap">
+            <div id="coffee-table" class="table table-borderless">
+                <h1 class="d-none">NAME</h1>
+                <h1 class="d-none">ROAST</h1>
+                <div class="tbody d-flex flex-wrap" id="coffees"></div>
+            </div>
+        </div>
+
+        <!--Dropdown Roast Selection Menu -->
+        <div class="col">
+            <div>
+                <form>
+                    <div class="form-group">
+                        <label for="roast-selection" class="font-weight-bold">Roast</label>
+                        <select class="d-block form-control" id="roast-selection">
+                            <option>light</option>
+                            <option>medium</option>
+                            <option>dark</option>
+                            <option>all</option>
+                        </select>
+                    </div>
+
+                    <!--Search Bar for Coffees-->
+                    <div class="form-group">
+                        <label for="coffee-search" class="font-weight-bold">Coffee Name</label>
+                        <input type="text" id="coffee-search" class="d-block form-control" onkeyup="searchFunction()">
+                    </div>
+
+                    <!--Coffee Submit Button for Dropdown Menu-->
+                    <input id="submit" class="d-block form-control btn btn-dark" type="submit" />
+                </form>
+            </div>
+
+            <hr>
+
+            <!--STARTING ADD A COFFEE SECTION-->
+
+            <!--Add a Coffee Header -->
+            <h1 align="center">Add a Coffee</h1>
+
+            <!--Add a Coffee Form-->
+            <div>
+                <form name="coffeeForm">
+                    <div class="form-group">
+                        <!--Dropdown Roast Selection Menu -->
+                        <label for="addRoast"class="font-weight-bold">Roast</label>
+                        <select class="d-block form-control" id="addRoast">
+                            <option>light</option>
+                            <option>medium</option>
+                            <option>dark</option>
+                        </select>
+                    </div>
+
+                    <!--Add a Coffee: Name Input-->
+                    <div class="form-group">
+                        <label for="coffeeName" class="font-weight-bold">Name</label>
+                        <input class="d-block form-control" type="text" id="coffeeName">
+                    </div>
+
+                    <!--Submit button for Form -->
+                    <input class="d-block form-control btn btn-dark" id="submit-new-coffee" type="submit"  />
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+<script src="js/main.js"></script>
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+</body>
+</html>
