@@ -12,5 +12,5 @@ A front-end project developed to provide a user-friendly experience when searchi
 HTML, CSS, JavaScript, Bootstrap
 
 <p align="center">
-    <img src="media/coffee-giphy.gif" alt="Coffee Gif">
+    <img src="img/coffee-giphy.gif" alt="Coffee Gif">
 </p>
