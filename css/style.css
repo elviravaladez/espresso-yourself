@@ -1,7 +1,15 @@
 .jumbotron {
-    background-image: linear-gradient(to bottom, rgba(0,0,0,0.6) 0%,rgba(0,0,0,0.6) 100%), url("../media/coffee-cover-photo.jpg");
+    background-image: linear-gradient(to bottom, rgba(0,0,0,0.6) 0%,rgba(0,0,0,0.6) 100%), url("../img/coffee-cover-photo.jpg");
     background-size: cover;
     background-position: center;
-    height: 40vh;
+    height: 20vh;
     color: white;
+}
+
+html, body {
+    height: 100%;
+}
+
+body {
+    background: linear-gradient(20deg, #ffe9d6 40%, #fff 0%);
 }
