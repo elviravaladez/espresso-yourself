@@ -2,7 +2,7 @@
 
 //displaying the table on the page
 function renderCoffee(coffee) {
-    var html = '<div class="tr coffee w-50">';
+    let html = '<div class="tr coffee w-50">';
     html += '<h4 class="td coffee-name d-inline-block mr-2">' + coffee.name + '</h4>';
     html += '<p class="td coffee-roast d-inline-block text-secondary">' + coffee.roast + '</p>';
     html += '</div>';
@@ -12,8 +12,8 @@ function renderCoffee(coffee) {
 
 //ascending the order of the coffee names/list
 function renderCoffees(coffees) {
-    var html = '';
-    for(var i = 0; i <= coffees.length - 1; i++) {
+    let html = '';
+    for(let i = 0; i <= coffees.length - 1; i++) {
         html += renderCoffee(coffees[i]);
     }
     return html;
@@ -23,8 +23,8 @@ function renderCoffees(coffees) {
 //Add an option to select all roasts for roast type
 function updateCoffees(e) {
     e.preventDefault(); // don't submit the form, we just want to update the data
-    var selectedRoast = roastSelection.value;
-    var filteredCoffees = [];
+    let selectedRoast = roastSelection.value;
+    let filteredCoffees = [];
     coffees.forEach(function(coffee) {
         if (coffee.roast === selectedRoast || selectedRoast === "all") {
             filteredCoffees.push(coffee);
@@ -35,7 +35,7 @@ function updateCoffees(e) {
 }
 
 //The array of objects that contains information about each coffee choice
-var coffees = [
+let coffees = [
     {id: 1, name: 'Light City', roast: 'light'},
     {id: 2, name: 'Half City', roast: 'light'},
     {id: 3, name: 'Cinnamon', roast: 'light'},
@@ -53,13 +53,13 @@ var coffees = [
 ];
 
 //is assigning the content within an id of #coffees to the tbody variable (the actual table body of the table)
-var tbody = document.querySelector('#coffees');
+let tbody = document.querySelector('#coffees');
 
 //is assigning the content related to the id of #submit to the submitButton variable (that is what is making it possible to change the content on the page)
-var submitButton = document.querySelector('#submit');
+let submitButton = document.querySelector('#submit');
 
 //is assigning the content related to the id of #roast-selection to the roastSelection variable
-var roastSelection = document.querySelector('#roast-selection');
+let roastSelection = document.querySelector('#roast-selection');
 
 //changing the innerHTML of tbody using the renderCoffees function
 tbody.innerHTML = renderCoffees(coffees);
@@ -69,12 +69,12 @@ submitButton.addEventListener('click', updateCoffees);
 
 //Function for filter table(searching through specific data in a table)
 function searchFunction() {
-    var input, filter, table, tr, td, i, txtValue;
+    let input, filter, table, tr, td, txtValue;
     input = document.getElementById("coffee-search");
     filter = input.value.toUpperCase();
     table = document.getElementById("coffee-table");
     tr = table.getElementsByClassName("tr");
-    for (i = 0; i < tr.length; i++) {
+    for (let i = 0; i < tr.length; i++) {
         td = tr[i].getElementsByClassName("td")[0];
         if (td) {
             txtValue = td.textContent || td.innerText;
@@ -90,9 +90,9 @@ function searchFunction() {
 //Function to add new coffee to table body
 function addNewCoffee(event){
     event.preventDefault(); // don't submit the form, we just want to update the data
-    var newCoffeeName = document.forms.coffeeForm.coffeeName;
-    var newCoffeeRoast = document.forms.coffeeForm.addRoast;
-    var userCreatedCoffee = {
+    let newCoffeeName = document.forms.coffeeForm.coffeeName;
+    let newCoffeeRoast = document.forms.coffeeForm.addRoast;
+    let userCreatedCoffee = {
         id: coffees.length + 1,
         name: newCoffeeName.value,
         roast: newCoffeeRoast.value
@@ -102,7 +102,7 @@ function addNewCoffee(event){
 }
 
 // Variable add coffee button
-var addCoffeeButton = document.querySelector("#submit-new-coffee");
+let addCoffeeButton = document.querySelector("#submit-new-coffee");
 
 // Event listener for submit new coffee button.
 addCoffeeButton.addEventListener("click", addNewCoffee);
