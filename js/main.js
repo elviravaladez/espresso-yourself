@@ -108,8 +108,6 @@ function addNewCoffee(event){
         name: newCoffeeName.value,
         roast: newCoffeeRoast.value
     };
-    console.log(newCoffeeName);
-    console.log(newCoffeeRoast);
     coffees.push(userCreatedCoffee);
     tbody.innerHTML = renderCoffees(coffees);
 }
