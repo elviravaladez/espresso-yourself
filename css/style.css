@@ -4,12 +4,33 @@
     background-position: center;
     height: 20vh;
     color: white;
+    display: flex;
+    align-items: center;
 }
 
 html, body {
     height: 100%;
 }
 
+
 body {
     background: linear-gradient(20deg, #ffe9d6 40%, #fff 0%);
+    font-family: 'Josefin Sans', sans-serif;
+}
+
+.espresso-yourself-heading {
+    font-family: 'Abril Fatface', cursive;
+}
+
+/* Extra large devices (large desktops, 1200px and up) */
+@media screen and (min-width:1200px) {
+    .jumbotron {
+        background-image: linear-gradient(to bottom, rgba(0,0,0,0.6) 0%,rgba(0,0,0,0.6) 100%), url("../img/coffee-cover-photo.jpg");
+        background-size: cover;
+        background-position: center;
+        height: 30vh;
+        color: white;
+        display: flex;
+        align-items: center;
+    }
 }
