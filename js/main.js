@@ -1,6 +1,6 @@
 "use strict"
 
-//displaying the table on the page
+//Displaying table on the page
 function renderCoffee(coffee) {
     let html = '<div class="tr coffee w-50">';
     html += '<h4 class="td coffee-name d-inline-block mr-2">' + coffee.name + '</h4>';
@@ -10,7 +10,7 @@ function renderCoffee(coffee) {
     return html;
 }
 
-//ascending the order of the coffee names/list
+//Ascending order of coffee names/list
 function renderCoffees(coffees) {
     let html = '';
     for(let i = 0; i <= coffees.length - 1; i++) {
@@ -19,7 +19,7 @@ function renderCoffees(coffees) {
     return html;
 }
 
-//Updating table of coffees based on roast type selected from drop down menu.
+//Updating table of coffees based on roast type selected from drop down menu
 //Add an option to select all roasts for roast type
 function updateCoffees(e) {
     e.preventDefault(); // don't submit the form, we just want to update the data
@@ -34,7 +34,7 @@ function updateCoffees(e) {
     tbody.innerHTML = renderCoffees(filteredCoffees);
 }
 
-//The array of objects that contains information about each coffee choice
+//Array of objects that contains information about each coffee choice
 let coffees = [
     {id: 1, name: 'Light City', roast: 'light'},
     {id: 2, name: 'Half City', roast: 'light'},
@@ -52,16 +52,15 @@ let coffees = [
     {id: 14, name: 'French', roast: 'dark'},
 ];
 
-//is assigning the content within an id of #coffees to the tbody variable (the actual table body of the table)
+//Assigning content within an id of #coffees to the tbody variable (the actual table body of the table)
 let tbody = document.querySelector('#coffees');
 
-//is assigning the content related to the id of #submit to the submitButton variable (that is what is making it possible to change the content on the page)
+//Assigning content related to the id of #submit to the submitButton variable (that is what is making it possible to change the content on the page)
 let submitButton = document.querySelector('#submit');
 
-//is assigning the content related to the id of #roast-selection to the roastSelection variable
+//Assigning content related to the id of #roast-selection to the roastSelection variable
 let roastSelection = document.querySelector('#roast-selection');
 
-//changing the innerHTML of tbody using the renderCoffees function
 tbody.innerHTML = renderCoffees(coffees);
 
 //Event listener for the submitButton(that is what is making the button actually work)
