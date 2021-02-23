@@ -1,6 +1,6 @@
 # Espresso Yourself
 <p align="center">
-    <img src="img/espresso-yourself.png" alt="Espressso Self">
+    <img src="img/espresso-yourself.png" alt="Espresso Self">
 </p>
 
 ---
