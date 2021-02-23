@@ -1,9 +1,29 @@
+# Espresso Yourself
 <p align="center">
     <img src="img/espresso-yourself.png" alt="Espressso Self">
 </p>
 
-## About The Project
+---
+
+### Table of Contents
+- [Description](#description)
+- [Features](#features)
+- [Author Information](#author)
+
+---
+
+## Description
 A front-end project developed to provide a user-friendly experience when searching for the ***perfect*** cup of Joe on the "Espresso Yourself" coffee website.  
+
+#### Built With:
+* HTML
+* CSS
+* JavaScript
+* Bootstrap
+
+[Back To The Top](#espresso-yourself)
+
+---
 
 ## Features
 * Search through coffee by name or roast
@@ -11,9 +31,15 @@ A front-end project developed to provide a user-friendly experience when searchi
 * Display only the coffees that match the provided search term
 * Update coffees displayed on the page as the user types in the search box
 
-## Built With
-HTML, CSS, JavaScript, Bootstrap
+[Back To The Top](#espresso-yourself)
+
+---
 
 <p align="center">
     <img src="img/coffee-giphy.gif" alt="Coffee Gif">
 </p>
+
+## Author
+[Elvira Valadez](https://github.com/elviravaladez)
+
+[Back To The Top](#espresso-yourself)
