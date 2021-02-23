@@ -26,6 +26,7 @@ A front-end project developed to provide a user-friendly experience when searchi
 ---
 
 ## Features
+#### Ability To:
 * Search through coffee by name or roast
 * Add new coffees to the page
 * Display only the coffees that match the provided search term
