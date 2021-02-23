@@ -35,12 +35,6 @@ A front-end project developed to provide a user-friendly experience when searchi
 
 ---
 
-[comment]: <> (<p align="center">)
-
-[comment]: <> (    <img src="img/coffee-giphy.gif" alt="Coffee Gif">)
-
-[comment]: <> (</p>)
-
 ## Author
 [Elvira Valadez](https://github.com/elviravaladez)
 
