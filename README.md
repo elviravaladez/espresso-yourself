@@ -1,4 +1,7 @@
 # Espresso Yourself
+<p align="center">
+    <img src="img/espresso-yourself.png" alt="Espressso Self">
+</p>
 
 A front-end project developed to provide a user-friendly experience when searching for the ***perfect*** cup of Joe on the "Espresso Yourself" coffee website.  
 
